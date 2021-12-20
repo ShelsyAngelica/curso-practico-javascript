@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>         <!--links que nos provee google fonts  para que tome las fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet"> <!--links que nos provee google fonts para que tome las fuentes -->
+    <link href="figura.css" rel="stylesheet" type="text/css">
+    <title>Figuras Geometricas | Curso practico JavaScript</title>
+</head>
+<body>
+    <div class="figures">
+        <header class="title">
+            <h1>
+                Figuras Geometricas
+            </h1>
+            <p>Este es el primer curso practico de JavaScript 💻</p>
+        </header>
+        <div class="container">
+            <section class="square">
+                <h2>Calcula el area y perimetro de un cuadrado </h2>
+                <form>
+                    <label for="InputCuadrado"> <!--conectamos nuestro input con ellabelpor medio del id usando for--> 
+                        Escribe cuanto mide cada lado de tu cuadrado:
+                    </label>
+                    <input id="InputCuadrado" type="number" />
+                    <button type="button" onclick="calcularPerimetroCuadrado()"> <!--indicamos el tipo de boton para eliminar por defecto que sea submit--> 
+                        Calcular el perimetro
+                    </button>
+                    <button type="button" onclick="calcularAreaCuadrado()">
+                        Calcular el area
+                    </button>
+                </form>
+            </section>
+
+            <section class="triangle">
+                <h2>Calcula el perimetro de un Triangulo</h2>
+                <form>
+                    <label for="InputTrianguloLado1"> <!--conectamos nuestro input con ellabelpor medio del id usando for--> 
+                        Escribe cuanto mide cada lado de tu Triangulo:
+                    </label>
+                    <label for="InputTrianguloLado2"> <!--conectamos nuestro input con ellabelpor medio del id usando for--> 
+                    
+                    </label>
+                    <label for="InputTrianguloLado3"> <!--conectamos nuestro input con ellabelpor medio del id usando for--> 
+                        
+                    </label>
+                    <input id="InputTrianguloLado1" type="number" />
+                    <input id="InputTrianguloLado2" type="number" />
+                    <input id="InputTrianguloLado3" type="number" />
+                    <button type="button" onclick="calcularPerimetroTriangulo()"> <!--indicamos el tipo de boton para eliminar por defecto que sea submit--> 
+                        Calcular el perimetro
+                    </button>
+                </form>
+            </section>
+
+            <section class="triangle_option2">
+                <h2>Calcula el area  de un Triangulo</h2>
+                <form>
+                    <label for="InputTrianguloBase"> <!--conectamos nuestro input con ellabelpor medio del id usando for--> 
+                        Escribe cuanto mide la base y altura de tu Triangulo:
+                    </label>
+                    <label for="InputTrianguloAltura"> <!--conectamos nuestro input con ellabelpor medio del id usando for-->               
+                    </label>
+                    <input id="InputTrianguloBase" type="number" />
+                    <input id="InputTrianguloAltura" type="number" />
+                    <button type="button" onclick="calcularAreaTriangulo()">
+                        Calcular el area
+                    </button>
+                </form>
+            </section>
+
+            <section class="circle">
+                <h2>Calcula el diametro  de un Circulo</h2>
+                <form>
+                    <label for="InputCirculoRadio"> <!--conectamos nuestro input con ellabelpor medio del id usando for--> 
+                        Escribe cuanto mide el radio de tu circulo:
+                    </label>            
+                    <input id="InputCirculoRadio" type="number" />
+                    <button type="button" onclick="calcularDiametroCirculo()">
+                        Calcular el diametro
+                    </button>
+                </form>
+            </section>
+
+            <section class="circle_option2">
+                <h2>Calcula el perimetro  de un Circulo</h2>
+                <form>
+                    <label for="InputCirculoRadio2"> <!--conectamos nuestro input con ellabelpor medio del id usando for--> 
+                        Escribe cuanto mide el radio de tu circulo:
+                    </label>            
+                    <input id="InputCirculoRadio2" type="number" />
+                    <button type="button" onclick="calculaPerimetroCirculo()">
+                        Calcular el perimetro
+                    </button>
+                </form>
+            </section>
+
+            <section class="circle_option2">
+                <h2>Calcula el area  de un Circulo</h2>
+                <form>
+                    <label for="InputCirculoRadio3"> <!--conectamos nuestro input con ellabelpor medio del id usando for--> 
+                        Escribe cuanto mide el radio de tu circulo:
+                    </label>            
+                    <input id="InputCirculoRadio3" type="number" />
+                    <button type="button" onclick="calcularAreaCirculo()">
+                        Calcular el area
+                    </button>
+                </form>
+            </section>
+
+            <section class="rectangle">
+                <h2> Calcula el perimetro de un Rectangulo </h2>
+                <form>
+                    <label for="InputRectanguloLadoMayor"> <!--conectamos nuestro input con ellabelpor medio del id usando for--> 
+                        Escribe cuanto mide el lado mayor y el lado menor de tu rectangulo:
+                    </label>
+                    <label for="InputRectanguloLadoMenor"></label>
+                    <input id="InputRectanguloLadoMayor" type="number" />
+                    <input id="InputRectanguloLadoMenor" type="number" />
+                    <button type="button" onclick="calcularPerimetroRectangulo()">
+                        Calcular el perimetro
+                    </button>
+                </form>
+            </section>
+
+            <section class="rectangle_option2">
+                <h2> Calcula el area de un Rectangulo </h2>
+                <form>
+                    <label for="InputRectanguloBase"> <!--conectamos nuestro input con ellabelpor medio del id usando for--> 
+                        Escribe cuanto mide la base y la altura de tu rectangulo:
+                    </label>
+                    <label for="InputRectanguloAltura"></label>
+                    <input id="InputRectanguloBase" type="number" />
+                    <input id="InputRectanguloAltura" type="number" />
+                    <button type="button" onclick="calcularAreaRectangulo()">
+                        Calcular el area
+                    </button>
+                </form>
+            </section>
+        </div>
+    </div>
+    
+<script src="figuras.js"></script>
+ 
+</body>
+</html>
+
+
+

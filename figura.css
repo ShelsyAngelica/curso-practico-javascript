@@ -1,0 +1,183 @@
+
+:root {  /* indicamos que vamos a tener variables de css */
+    --white:#FFFFFF;  /*  variables de color  */
+    --black:#000000;
+    --very-light-pink:#C7C7C7;
+    --DarkCyan:#008B8B;
+    --sm:20px;          /* variables de tamaño de letra  */
+    --md:35px;
+    --lg:50px;
+}
+body{
+    margin:0; /* le quitamos la margen que trae por defecto */
+    font-family: 'Quicksand', sans-serif; /* reglas que nos provee google fonts , para que tome las fuentes*/
+}
+.figures{
+    width: 100%; /* va a medir el 100% de la pantalla */
+    display: grid;
+    place-items: center;
+}
+.container{
+    margin-top: 60px;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding: 10px;
+}
+.title h1{
+    border: 2px solid var(--very-light-pink);
+    border-radius: 8px;
+    margin-top: 50px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 10px;
+    font-size: var(--lg);
+    color :var(--DarkCyan);
+}
+.title{
+    text-align: center;
+}
+.title p{
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+.square{
+    border: 2px solid var(--very-light-pink);
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+.square h2{
+    text-align: center;
+    font-size: var(--md);
+	color :var(--DarkCyan);
+
+}
+.square form{
+    display: flex;
+    justify-content: space-between;
+}
+.triangle{
+    border: 2px solid var(--very-light-pink);
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+.triangle h2{
+    text-align: center;
+    font-size: var(--md);
+    color :var(--DarkCyan)
+}
+.triangle form{
+    display: flex;
+    justify-content: space-between;
+}
+.triangle_option2{
+    border: 2px solid var(--very-light-pink);
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+.triangle_option2 h2{
+    text-align: center;
+    font-size: var(--md);
+    color :var(--DarkCyan)
+}
+.triangle_option2 form{
+    display: flex;
+    justify-content: space-between;
+}
+.circle{
+    border: 2px solid var(--very-light-pink);
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+.circle h2{
+    text-align: center;
+    font-size: var(--md);
+    color :var(--DarkCyan)
+}
+.circle form{
+    display: flex;
+    justify-content: space-between;
+}
+.circle_option2{
+    border: 2px solid var(--very-light-pink);
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+.circle_option2 h2{
+    text-align: center;
+    font-size: var(--md);
+    color :var(--DarkCyan)
+}
+.circle_option2 form{
+    display: flex;
+    justify-content: space-between;
+}
+.rectangle{
+    border: 2px solid var(--very-light-pink);
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+.rectangle h2{
+    text-align: center;
+    font-size: var(--md);
+    color :var(--DarkCyan)
+}
+.rectangle form{
+    display: flex;
+    justify-content: space-between;
+}
+.rectangle_option2{
+    border: 2px solid var(--very-light-pink);
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+.rectangle_option2 h2{
+    text-align: center;
+    font-size: var(--md);
+    color :var(--DarkCyan)
+}
+.rectangle_option2 form{
+    display: flex;
+    justify-content: space-between;
+}
