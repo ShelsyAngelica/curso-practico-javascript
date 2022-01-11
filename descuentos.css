@@ -1,0 +1,32 @@
+body{
+    margin: 30px;
+    padding: 60px;
+    font-family: 'Quicksand', sans-serif;
+}
+h1{
+    margin-bottom: 22px;
+}
+h2{
+    margin-top: 38px;
+    margin-bottom: 60px;
+}
+form{
+    display: grid;
+}
+form label{
+    color: rgb(42, 65, 109);
+    text-align: center;
+}
+input{
+    cursor: pointer;
+    margin: 10px 200px;
+    border: 1px solid blue ;
+    border-radius: 5px;
+}
+button{
+    cursor: pointer ;
+    color: rgb(86, 86, 172);
+    margin: 10px 150px;
+    border: 1px solid blue ;
+    border-radius: 5px;
+}

@@ -31,6 +31,19 @@ console.groupEnd();
 ///////////  Codigo del circulo //////////////
 console.group("Circulo");
 
+///////////  Codigo del triangulo Isoceles //////////////
+function alturaTriangulo (a1, a2, b){
+    if ( a1 === a2 && a1 !== b && a2 !== b ){
+        return (Math.sqrt((a1 * a2) - (b * b /4)));
+         
+        
+    }
+    else{
+        return "No es un triangulo isoceles";
+    }
+     
+}
+alturaTriangulo();
 
 //Diametro
 function diametroCirculo (radio){
@@ -69,6 +82,8 @@ function areaRectangulo(base, altura){
     return base * altura;
 }
 areaRectangulo();
+
+
 
 //////////// Aqui interactuamos con HTML //////////////
 
@@ -116,7 +131,19 @@ function calcularAreaTriangulo(){
     const area = areaTriangulo(valueBase,valueAltura);
     alert(area);
 }
-
+function calcularAlturaTriangulo(){
+    const inputA1 =  document.getElementById("InputTrianguloA1");
+    const valueA1 = inputA1.value;
+    console.log(valueA1);
+    const inputA2 =  document.getElementById("InputTrianguloA2");
+    const valueA2 = inputA2.value;
+    console.log(valueA2);
+    const inputBase =  document.getElementById("InputTrianguloBase1");
+    const valueBase = inputBase.value;
+    console.log(valueBase);
+    const altura = alturaTriangulo(valueA1,valueA2,valueBase)
+    alert(altura)
+}
 ///////////  Codigo del circulo //////////////
 
 function calcularDiametroCirculo(){
@@ -163,3 +190,4 @@ function calcularAreaRectangulo(){
     const area = areaRectangulo(valueBase,valueAltura)
     alert(area)
 }
+
